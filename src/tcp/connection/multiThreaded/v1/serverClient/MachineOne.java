@@ -1,17 +1,17 @@
-package tcp.connection.multiThreaded.serverClient;
+package tcp.connection.multiThreaded.v1.serverClient;
 
 import java.io.*;
 import java.net.*;
 import java.util.Scanner;
 
-class MachineTwo implements Runnable {
+class MachineOne implements Runnable {
 	public static void main(String argv[]) throws Exception {
-		new MachineTwo();
+		new MachineOne();
 	}
 
-	public MachineTwo() throws Exception {
+	public MachineOne() throws Exception {
 
-		ServerSocket ss = new ServerSocket(5000);
+		ServerSocket ss = new ServerSocket(6000);
 		Thread t = new Thread(this);
 		t.start();
 
@@ -23,9 +23,9 @@ class MachineTwo implements Runnable {
 			DataInputStream inFromClient = new DataInputStream(
 					serverSocket.getInputStream());
 
-			boolean success = (new File("3")).mkdir();
+			boolean success = (new File("4")).mkdir();
 			FileOutputStream out = new FileOutputStream(
-					"E:/ServerCode/3/cameraman.jpg");
+					"C:/Users/Kaushik/Workspaces/Eclipse/JAVApractice/4/Desert.jpg");
 
 			byte[] buffer = new byte[8192];
 			int bytesRead = 0;
@@ -51,8 +51,8 @@ class MachineTwo implements Runnable {
 
 			try {
 				FileInputStream fileIn = new FileInputStream(
-						"E:/ServerCode/2/Desert.jpg");
-				Socket clientSocket = new Socket("localhost", 6000);
+						"C:/Users/Kaushik/Workspaces/Eclipse/JAVApractice/1/cameraman.jpg");
+				Socket clientSocket = new Socket("localhost", 5000);
 				DataOutputStream outToServer = new DataOutputStream(
 						clientSocket.getOutputStream());
 
