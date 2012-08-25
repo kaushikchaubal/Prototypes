@@ -1,9 +1,9 @@
-package kaushik.tcp.connection.basic;
+package tcp.connection.string;
 
 import java.io.*;
 import java.net.*;
 
-class TcpClient {
+class TcpClientString {
 	public static void main(String argv[]) throws Exception {
 		String sentence;
 

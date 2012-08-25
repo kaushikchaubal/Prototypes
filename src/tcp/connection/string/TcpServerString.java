@@ -1,9 +1,9 @@
-package kaushik.tcp.connection.basic;
+package tcp.connection.string;
 
 import java.io.*;
 import java.net.*;
 
-public class TcpServer {
+public class TcpServerString {
 	public static void main(String[] args) {
 		String clientSentence;
 		ServerSocket ss;
