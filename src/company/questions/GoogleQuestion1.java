@@ -2,13 +2,13 @@ package company.questions;
 import java.util.HashMap;
 
 
-public class GoogleQ {
+public class GoogleQuestion1 {
 
 	public static void main(String[] args) {
-		new GoogleQ();
+		new GoogleQuestion1();
 	}
 	
-	public GoogleQ() {
+	public GoogleQuestion1() {
 		String input = "abcba";
 		String order = "bca";
 		
