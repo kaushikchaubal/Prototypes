@@ -19,7 +19,7 @@ public class guiPractice1 implements ActionListener{
 	public guiPractice1(){
 		JFrame frame = new JFrame();
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.setTitle("Addition of 2 numbers");
+		frame.setTitle("Addition of two numbers");
 		frame.setSize(150,300);
 		
 		JPanel pane = new JPanel();
